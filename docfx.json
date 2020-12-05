@@ -3,8 +3,7 @@
     {
       "src": [
         {
-          "files": [ "./src/**.csproj","api/**.yml","api/**.md" ],
-          "cwd":"docs"
+          "files": [ "./src/**.csproj","api/**/**.yml","api/**/**.md" ]
         }
       ],
       "dest": "/api",
@@ -18,17 +17,15 @@
         "files": [
           "**/**.yml",
           "**/**.md"
-        ],
-        "src": "docs",
-        "dest": "."
+        ]
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml",
-        ],
-        "src": "docs",
-        "dest": "."
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
       }
     ],
     "resource": [
