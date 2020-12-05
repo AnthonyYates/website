@@ -3,10 +3,10 @@
     {
       "src": [
         {
-          "files": [ "src/**.csproj" ]
+          "files": [ "src/**.csproj","api/**.yml","api/**.md" ]
         },
         {
-          "files": [ "./src/**.csproj" ]
+          "files": [ "./src/**.csproj","api/**.yml","api/**.md" ]
         }
       ],
       "dest": "docs/api",
@@ -19,7 +19,7 @@
       {
         "files": [
           "api/**/**.yml",
-          "api/index.md"
+          "**/**.md"
         ],
         "src": "docs",
         "dest": "."
