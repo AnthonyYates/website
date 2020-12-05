@@ -3,14 +3,9 @@
     {
       "src": [
         {
-          "files": [
-            "src/**.csproj"
-          ]
-        },
-        {
-          "files": [
-            "./src/**.csproj"
-          ]
+          "files": [ "**/*.csproj" ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "cwd": "docs"
         }
       ],
       "dest": "docs/api",
@@ -21,27 +16,18 @@
   "build": {
     "content": [
       {
-        "files": [
-          "api/**/**.yml",
-          "api/index.md"
-        ],
-        "src": "docs",
-        "dest": "."
+        "files": [ "**/*.yml", "api/index.md" ],
+        "dest": "api",
+        "cwd": "docs/api"
       },
       {
-        "files": [
-          "**/*.md",
-          "**/*.yml",
-        ],
-        "src": "docs",
-        "dest": "."
+        "files": [ "**/*.md", "**/*.yml" ]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": [ "images/**" ],
+        "cwd": "docs"
       }
     ],
     "overwrite": [
@@ -55,6 +41,10 @@
         ]
       }
     ],
+    "globalMetadata": {
+      "_appTitle": "Testing Deployment",
+      "_enableSearch": true
+    },
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
