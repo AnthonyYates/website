@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "files": [ "./src/**.csproj","**/**.yml","**/**.md" ],
+          "files": [ "./src/**.csproj","api/**.yml","api/**.md" ],
           "cwd":"docs"
         }
       ],
