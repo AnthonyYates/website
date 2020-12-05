@@ -3,10 +3,7 @@
     {
       "src": [
         {
-          "files": [ "src/**.csproj","api/**.yml","api/**.md" ]
-        },
-        {
-          "files": [ "./src/**.csproj","api/**.yml","api/**.md" ]
+          "files": [ "./src/**.csproj","api/**.yml","api/**.md" ],
         }
       ],
       "dest": "docs/api",
@@ -51,6 +48,7 @@
         ]
       }
     ],
+    "src": "docs",
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
