@@ -3,10 +3,11 @@
     {
       "src": [
         {
-          "files": [ "./src/**.csproj","api/**.yml","api/**.md" ],
+          "files": [ "./src/**.csproj","**/**.yml","**/**.md" ],
+          "cwd":"docs"
         }
       ],
-      "dest": "docs/api",
+      "dest": "/api",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -15,7 +16,7 @@
     "content": [
       {
         "files": [
-          "api/**/**.yml",
+          "**/**.yml",
           "**/**.md"
         ],
         "src": "docs",
