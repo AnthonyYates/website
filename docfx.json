@@ -3,10 +3,17 @@
     {
       "src": [
         {
-          "files": [ "src/**.csproj","api/**.yml","api/**.md" ]
+          "files": [
+            "src/**.csproj"
+          ]
+        },
+        {
+          "files": [
+            "./src/**.csproj"
+          ]
         }
       ],
-      "dest": "/api",
+      "dest": "docs/api",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -15,19 +22,19 @@
     "content": [
       {
         "files": [
-          "api/**.yml",
+          "api/**/**.yml",
           "api/index.md"
         ],
-        "cwd":"docs"
+        "src": "docs",
+        "dest": "."
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
+          "**/*.md",
+          "**/*.yml",
         ],
-        "cwd":"docs"
+        "src": "docs",
+        "dest": "."
       }
     ],
     "resource": [
